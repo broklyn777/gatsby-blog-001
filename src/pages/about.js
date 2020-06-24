@@ -12,7 +12,7 @@ const about = () => {
       <Hero2 />
       <section className="mdx-page">
         <div style={{ color: `#ffbc00` }}>
-          <h1>GNAGET!!!!</h1>
+          <h1>Gnaget är Bäst!!!!</h1>
 
           <Video src="https://www.youtube.com/embed/VqnTnDXb0X8" />
           <p>What a world.</p>

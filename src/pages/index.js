@@ -1,6 +1,8 @@
 import React from 'react'
 import Hero from '../components/Hero'
+import Hero2 from '../components/Hero2'
 import Layout from '../components/Layout'
+import Navbar from '../components/Navbar'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
@@ -11,7 +13,8 @@ const IndexPage = ({ data }) => {
   } = data
   return (
     <Layout>
-      <Hero showPerson />
+      <Navbar />
+      <Hero2 />
 
       <Posts posts={posts} title="recently published" />
     </Layout>

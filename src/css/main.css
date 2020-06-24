@@ -353,7 +353,7 @@ Hero
 ===============
 */
 .hero {
-  background: var(--clr-primary-10);
+  background: var(--main-color);
   height: 12rem;
   position: relative;
   z-index: -1;

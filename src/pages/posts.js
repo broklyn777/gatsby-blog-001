@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
+import Hero2 from '../components/Hero2'
+import Navbar from '../components/Navbar'
 import { graphql } from 'gatsby'
 import Posts from '../components/Posts'
 const PostsPage = ({ data }) => {
@@ -9,7 +10,8 @@ const PostsPage = ({ data }) => {
   } = data
   return (
     <Layout>
-      <Hero />
+      <Navbar />
+      <Hero2 />
       <Posts posts={posts} title="all-posts" />
     </Layout>
   )

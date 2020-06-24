@@ -1,8 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Hero2 from '../components/Hero2'
+import Navbar from '../components/Navbar'
 const NewsLetter = () => {
   return (
     <Layout>
+      <Navbar />
+      <Hero2 />
       <section className="newsletter-page">
         <div className="page-center">
           <h2>Få alla de senaste nyheterna till din inbox</h2>
