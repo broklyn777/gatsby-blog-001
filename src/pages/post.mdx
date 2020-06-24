@@ -1,0 +1,172 @@
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton, RegVideo, Video } from '../components/Complete'
+
+<section className="mdx-page" >
+
+## my first mdx file
+
+**I'm baby bespoke kogi organic whatever, taxidermy gentrify messenger bag selfies beard shoreditch hashtag before they sold out raclette.** Pitchfork retro yr chillwave viral, thundercats williamsburg kogi try-hard franzen copper mug artisan. Seitan shaman raw denim quinoa pug, four loko la croix chia synth. _Flannel literally church-key, offal neutra helvetica cardigan whatever small batch keytar typewriter._
+
+Gatsby Example : https://www.gatsbyjs.org/docs/add-seo-component/
+
+```js
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+<div className="code">
+
+```js
+const firstName = 'john'
+const lastName = 'smith'
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3> nice text </h3>
+
+<FiInfo className="nice-text-icon"> </FiInfo>
+
+8-bit subway tile VHS fashion axe kitsch. Tbh try-hard kickstarter tote bag 8-bit literally direct trade polaroid offal occupy la croix banjo kinfolk af. Ramps blog gentrify helvetica. Gluten-free bitters jianbing, austin biodiesel YOLO shabby chic occupy intelligentsia everyday carry. Mustache flexitarian cloud bread church-key tousled. Drinking vinegar man bun raclette activated charcoal, pour-over aesthetic meh vice 90's.
+
+- This is the first list item.
+- Here's the second list item.
+
+  I need to add another paragraph below the second list item.
+
+- And here's the third list item.
+
+</div>
+
+<h2> React Components </h2>
+
+<Counter />
+
+```js
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Gillar du artikeln?
+          <br />
+          Klicka tummen upp ngra ggr
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+<h2> video components</h2>
+
+<RegVideo />
+<Video />
+<h2>regular heading</h2>
+<h2 title>title heading</h2>
+<h4> inline code</h4>
+
+`console.log("hello there")`
+
+`<h2> video components</h2>`
+
+<h4>blockquote element </h4>
+
+<blockquote display="default">
+  I'm baby prism everyday carry post-ironic jean shorts venmo health goth, migas
+</blockquote>
+
+<blockquote display="info">
+  I'm baby prism everyday carry post-ironic jean shorts venmo health goth, migas
+</blockquote>
+
+<blockquote display="warning">
+  I'm baby prism everyday carry post-ironic jean shorts venmo health goth, migas
+</blockquote>
+
+<blockquote>
+  I'm baby gluten-free lo-fi tumblr, bicycle rights edison bulb green juice
+  ennui next level viral jean shorts. Food truck godard street art migas fixie
+  shaman paleo chia single-origin coffee poke pug portland flannel.
+</blockquote>
+
+#### Javascript
+
+```js
+// comments
+const name = 'john'
+const channel = 'coding addict'
+
+function featuredProducts(data) {
+  return data.filter(item => {
+    return item.featured === true
+  })
+}
+featuredProducts()
+```
+
+#### JSX
+
+```jsx
+import React from 'react'
+
+const Counter = () => {
+  const [count, setCount] = React.useState(0)
+  return (
+    <section className="counter">
+      <h4>show some love to MDX</h4>
+      <h4>likes {count}</h4>
+      <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+        i like mdx
+      </button>
+    </section>
+  )
+}
+export default Counter
+```
+
+#### HTML
+
+```html
+<h1>hello world!!!</h1>
+<p class="random">random text</p>
+<section class="contact">
+  <div class="title">
+    <h1>contact us</h1>
+  </div>
+</section>
+```
+
+#### CSS
+
+```css
+max-width: 500px;
+border-radius: var(--radius);
+padding: 1rem 1.5rem;
+background: var(--clr-grey-10);
+text-align: center;
+```
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+<Link to="/" className="btn center-btn">
+  Hem
+</Link>
+</section>
