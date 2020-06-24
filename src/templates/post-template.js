@@ -1,11 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
+import Hero2 from '../components/Hero2'
 import styled from 'styled-components'
 import Image from 'gatsby-image'
 import Banner from '../components/Banner'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import Navbar from '../components/Navbar'
 const PostTemplate = ({ data }) => {
   const {
     mdx: {
@@ -15,7 +16,8 @@ const PostTemplate = ({ data }) => {
   } = data
   return (
     <Layout>
-      <Hero />
+      <Navbar />
+      <Hero2 />
       <Wrapper>
         {/* Post Info */}
         <article>
